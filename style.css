@@ -1,0 +1,239 @@
+body {
+    font-family: Arial, sans-serif;
+	font-weight: bold;
+    background-color: #555;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #555;
+
+    color: pink;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.nav-bar {
+    background-color: #555;
+    padding: 10px 0;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-bar ul li a {
+    color: pink;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-bar ul li a:hover {
+    background-color: #333;
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+}
+
+section {
+	font-weight: bold;
+    padding: 20px;
+    text-align: center;
+	color: pink;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skill-item i {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: pink; 
+	transition: box-shadow 0.3s ease;
+}
+.skill-item i:hover {
+    text-shadow: 0 0 10px pink, 0 0 20px pink, 0 0 30px pink;
+    color: black;
+}
+.skill-item a {
+    text-decoration: none;
+    color: pink;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.skill-item a:hover {
+    color: black; 
+}
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 50px;
+	gap: 60px;
+	height: 80vh;
+	margin-left: 300px;
+}
+.profile-pic {
+    display: inline-block; 
+    border-radius: 50%; 
+    width: 350px;
+    height: 350px;
+    transition: box-shadow 0.3s ease; 
+	border: 2px solid pink;
+}
+.profile-pic img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+  
+}
+.header-content {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    text-align: left; 
+}
+
+.header-content h1 {
+    font-size: 2.5em;
+    color: pink;
+}
+
+.header-content p {
+    font-size: 1.5em;
+    color: pink;
+}
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-info h1 {
+    font-size: 2em;
+    color: pink;
+}
+
+.profile-info p {
+    font-size: 1.5em;
+    color: white;
+}
+
+.profile-pic:hover {
+    box-shadow: 0 0 20px 10px pink; 
+}
+.hover-text {
+	font-size: 36px;
+    position: relative; 
+    display: inline-block; 
+    color: pink; 
+}
+
+.hover-text::after {
+    content: ""; 
+    position: absolute; 
+    left: 0; 
+    bottom: 0; 
+    height: 2px; 
+    width: 100%; 
+    background-color: pink; 
+    transform: scaleX(0); 
+    transition: transform 0.3s ease; 
+}
+
+.hover-text:hover::after {
+    transform: scaleX(1); 
+}
+.contact-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; 
+    margin-top: 20px;
+}
+
+.contact-icons i {
+    font-size: 30px; 
+    color: pink;
+	transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+.contact-icons i:hover {
+    color: black; 
+    text-shadow: 0 0 5px pink, 0 0 10px pink; 
+}
+.contact-icons a {
+    font-size: 30px; 
+    color: pink;
+    text-decoration: none;
+	transition: color 0.3s ease;
+}
+.contact-icons a:hover {
+    color: black; 
+	text-shadow: 0 0 5px pink, 0 0 10px pink;
+}
+footer p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: pink;
+}
+form {
+    width: 60%;
+    margin: 30px auto;
+    padding: 20px;
+    width: 50%;
+    border-collapse: collapse;
+	background-color: pink;
+	text-align: center;
+}
+
+form input, form textarea {
+    padding: 20px;
+	width: 90%;
+    border: 1px solid #ddd;
+    text-align: center;
+	color: #333;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+footer {
+    text-align: center;
+	font-size: 15px;
+	margin: 30px auto;
+}
